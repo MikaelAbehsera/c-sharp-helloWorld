@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace hellocSharpworld
+namespace ConsoleApp1
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello, world!");
+            Console.ReadLine();
         }
     }
 }
