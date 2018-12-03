@@ -6,9 +6,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string name = "mike";
-            Console.WriteLine(name);
-            //Console.WriteLine("Hello, world!");
+            string firstName = "John";
+            string lastName = "Doe";
+            //Print full name
+            Console.WriteLine("Name: " + firstName + " " + lastName);
+            //Ask for new name
+            Console.WriteLine("Please enter a new first name:");
+            firstName = Console.ReadLine();
+            //Print the new name
+            Console.WriteLine("New name: " + firstName + " " + lastName);
+
             Console.ReadLine();
         }
     }
