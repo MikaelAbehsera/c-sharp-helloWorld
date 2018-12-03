@@ -6,15 +6,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string firstName = "John";
-            string lastName = "Doe";
-            //Print full name
-            Console.WriteLine("Name: " + firstName + " " + lastName);
-            //Ask for new name
-            Console.WriteLine("Please enter a new first name:");
-            firstName = Console.ReadLine();
-            //Print the new name
-            Console.WriteLine("New name: " + firstName + " " + lastName);
+            int number1, number2;
+
+            Console.WriteLine("Please enter a number:");
+            number1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Thank you. One more:");
+            number2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Adding the two numbers: " + (number1 + number2));
 
             Console.ReadLine();
         }
