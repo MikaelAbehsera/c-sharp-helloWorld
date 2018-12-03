@@ -7,13 +7,14 @@ namespace VariableScope
         static void Main(string[] args)
         {
             int number = 20;
-            AddFive(number);
+            AddFive(ref number);
             Console.WriteLine(number);
             Console.ReadKey();
         }
 
-        static void AddFive(int number)
+        static void AddFive(ref int number)
         {
             number = number + 5;
         }
     }
+} 
