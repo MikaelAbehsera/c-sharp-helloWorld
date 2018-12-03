@@ -6,15 +6,15 @@ namespace VariableScope
     {
         static void Main(string[] args)
         {
-            int number = 20;
-            AddFive(ref number);
-            Console.WriteLine(number);
+            GreetPersons(0);
+            GreetPersons(25, "John", "Jane", "Tarzan");
             Console.ReadKey();
         }
 
-        static void AddFive(ref int number)
+        static void GreetPersons(int someUnusedParameter, params string[] names)
         {
-            number = number + 5;
+            foreach (string name in names)
+                Console.WriteLine("Hello, " + name);
         }
     }
 } 
