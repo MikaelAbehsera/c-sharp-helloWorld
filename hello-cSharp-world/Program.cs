@@ -2,22 +2,26 @@
 
 using System;
 
-namespace VariableScope
+namespace ConsoleApplication1
 {
     class Program
     {
-        //TODO: this is a todo comment
         static void Main(string[] args)
         {
-            GreetPersons(0);
-            GreetPersons(25, "John", "Jane", "Tarzan");
-            Console.ReadKey();
-        }
-       //HACK: this is a hack comment
-        static void GreetPersons(int someUnusedParameter, params string[] names)
-        {
-            foreach (string name in names)
-                Console.WriteLine("Hello, " + name);
+            int number;
+
+            Console.WriteLine("Please enter a number between 0 and 10:");
+            number = int.Parse(Console.ReadLine());
+
+            if (number > 10)
+                Console.WriteLine("Hey! The number should be 10 or less!");
+            else
+                if (number < 0)
+                    Console.WriteLine("Hey! The number should be 0 or more!");
+                else
+                    Console.WriteLine("Good job!");
+
+            Console.ReadLine();
         }
     }
-} 
+}
