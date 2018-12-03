@@ -6,17 +6,14 @@ namespace VariableScope
     {
         static void Main(string[] args)
         {
-
+            int number = 20;
+            AddFive(number);
+            Console.WriteLine(number);
+            Console.ReadKey();
         }
 
-        public int AddNumbers(int number1, int number2)
+        static void AddFive(int number)
         {
-            int result = number1 + number2;
-            if (result > 10)
-            {
-                return result;
-            }
-            return 0;
+            number = number + 5;
         }
     }
-}
