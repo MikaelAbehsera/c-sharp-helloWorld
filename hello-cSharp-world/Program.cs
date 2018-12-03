@@ -1,22 +1,24 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace VariableScope
 {
     class Program
     {
+        // set var to private and static so new class instance does not need to be made
+        private static string helloClass = "Hello, class!";
+        // set up static func to return nothing
         static void Main(string[] args)
         {
-            int number1, number2;
 
-            Console.WriteLine("Please enter a number:");
-            number1 = int.Parse(Console.ReadLine());
+            string helloLocal = "Hello, local!";
+            Console.WriteLine(helloLocal);
+            Console.WriteLine(Program.helloClass);
+            DoStuff();
+        }
 
-            Console.WriteLine("Thank you. One more:");
-            number2 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Adding the two numbers: " + (number1 + number2));
-
-            Console.ReadLine();
+        static void DoStuff()
+        {
+            Console.WriteLine("A message from DoStuff: " + Program.helloClass);
         }
     }
 }
