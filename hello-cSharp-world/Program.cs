@@ -8,20 +8,28 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int number;
+            Console.WriteLine("Hi!, What is 20 + 20?");
+            int userInput1 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Please enter a number between 0 and 10:");
-            number = int.Parse(Console.ReadLine());
-
-            if (number > 10)
-                Console.WriteLine("Hey! The number should be 10 or less!");
+            if(QuestionAdd( 20, 20, userInput1))
+            {
+                Console.WriteLine("Good Jerb");
+            }
             else
-                if (number < 0)
-                    Console.WriteLine("Hey! The number should be 0 or more!");
-                else
-                    Console.WriteLine("Good job!");
+            {
+                Console.WriteLine("Bad Jerb");
+            }
+        }
 
-            Console.ReadLine();
+        static bool QuestionAdd(int first, int second, int answer)
+        {
+            // if answer is good 
+            if ((first + second) == answer)
+            {
+                return true;
+            }
+            // if answer is bad
+            return false;
         }
     }
 }
