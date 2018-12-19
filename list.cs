@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+
+public class Hello
+{
+    public static void Main()
+    {
+        // TODO: add your code here
+		List<int> primeNumbers = new List<string>();
+        numbers.Add(2);
+        numbers.Add(3);
+        numbers.Add(5);
+		numbers.Add(7);
+        numbers.Add(11);
+
+        // test code
+        Console.WriteLine(primeNumbers.Count);
+        Console.WriteLine(primeNumbers[0]);
+        Console.WriteLine(primeNumbers[1]);
+        Console.WriteLine(primeNumbers[2]);
+        Console.WriteLine(primeNumbers[3]);
+        Console.WriteLine(primeNumbers[4]);
+
+    }
+}
