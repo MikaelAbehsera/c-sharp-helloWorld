@@ -6,12 +6,12 @@ public class Hello
     public static void Main()
     {
         // TODO: add your code here
-		List<int> primeNumbers = new List<string>();
-        numbers.Add(2);
-        numbers.Add(3);
-        numbers.Add(5);
-		numbers.Add(7);
-        numbers.Add(11);
+		List<int> primeNumbers = new List<int>();
+        primeNumbers.Add(2);
+        primeNumbers.Add(3);
+        primeNumbers.Add(5);
+		primeNumbers.Add(7);
+        primeNumbers.Add(11);
 
         // test code
         Console.WriteLine(primeNumbers.Count);
