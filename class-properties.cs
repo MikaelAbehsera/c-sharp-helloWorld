@@ -7,9 +7,9 @@ public class MainClass
   public static void Main()
   {
     //Create vehicles here
-    Vehicle car = new Vehicle();
-    Vehicle oldcar = new Vehicle();
-    Vehicle bike = new Vehicle();
+    Vehicle car = new Vehicle("car", 4, 2000, true);
+    Vehicle oldcar = new Vehicle("car", 4, 1980, false);
+    Vehicle bike = new Vehicle("bike", 2, 2017, true);
 
     // Test code
     Console.WriteLine(car.Type);
@@ -19,8 +19,13 @@ public class MainClass
 }
 
 class Vehicle
-{
-  public Vehicle(string Type, int NumTires, int Year, bool Runs)
+{ 
+  public string Type;
+  public int NumTires;
+  public int Year;
+  public bool Runs;
+
+  public Vehicle(string type, int numTires, int year, bool Runs)
   {
     Type = Type;
     NumTires = NumTires;
