@@ -8,6 +8,9 @@ public class Functions
         int n = 10;
 
         // write for loop here
+        for (int i = 0; i < n; i++ ) {
+          Console.WriteLine(x);
+        }
     }
 
 }
