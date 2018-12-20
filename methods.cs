@@ -14,10 +14,9 @@ public class Methods
 
   //write method foo here
 
-  public static int Foo()
+  public static int Foo(int num1, int num2)
   {
-
+    return (num1/num2);
   }
-
 
 }
