@@ -27,9 +27,9 @@ class Vehicle
 
   public Vehicle(string type, int numTires, int year, bool Runs)
   {
-    Type = Type;
-    NumTires = NumTires;
-    Year = Year;
-    Runs = Runs;
+    Type = type;
+    NumTires = numTires;
+    Year = year;
+    Runs = runs;
   }
 }
