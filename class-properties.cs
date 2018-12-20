@@ -25,7 +25,7 @@ class Vehicle
   public int Year;
   public bool Runs;
 
-  public Vehicle(string type, int numTires, int year, bool Runs)
+  public Vehicle(string type, int numTires, int year, bool runs)
   {
     Type = type;
     NumTires = numTires;
