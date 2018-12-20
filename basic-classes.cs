@@ -17,4 +17,4 @@ class car
   public int numTires = 4;
   public int year = 2000;
   public bool runs = true;
-}    
+}
