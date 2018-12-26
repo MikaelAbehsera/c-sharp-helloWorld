@@ -2,16 +2,21 @@ using System;
 
 public class Kata
 {
-  public static bool IsIsogram(string str) 
+  public static bool IsIsogram(string str)
   {
-    char[] spl = str.Split("");
 
     bool status = true;
 
-    for( int i = 0; i < spl.Length; i++ ) {
-      if( spl[i] == spl[--i] ) {
+    //TODO  fix error here ==> ```Solution.cs(11,23): error CS0029: Cannot implicitly convert type 'string' to 'char'```
+    char lastLetter = "c";
+
+    foreach (char letter in str)
+    {
+      if (letter == lastLetter)
+      {
         status = false;
       }
+      lastLetter = letter;
     }
 
     return status;
