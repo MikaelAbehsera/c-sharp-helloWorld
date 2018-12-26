@@ -7,7 +7,7 @@ public class Kata
     // store 2 variables ==> 1 shortest word index, 2 shortest word length for refrence
 
     string[] spl = s.Split(" ");
-    int shortestWordLength = spl[0];
+    int shortestWordLength = spl[0].Length;
     
     for( int i = 0; i < spl.Length; i++ ) {
       if( spl[i].Length < shortestWordLength ) {
