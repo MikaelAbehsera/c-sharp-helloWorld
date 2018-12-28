@@ -8,7 +8,7 @@ public static class Kata
         int vowelCount = 0;
 
         foreach (char letter in str) {
-          if ( letter.ToLower() == "a" || letter.ToLower() == "e" || letter.ToLower() == "i" || letter.ToLower() == "o" || letter.ToLower() == "u" ) {
+          if ( Char.ToLower(letter).ToString() == "a" || Char.ToLower(letter).ToString() == "e" || Char.ToLower(letter).ToString() == "i" || Char.ToLower(letter).ToString() == "o" || Char.ToLower(letter).ToString() == "u" ) {
             vowelCount++;
           }
         }
