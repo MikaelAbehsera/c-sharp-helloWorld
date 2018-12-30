@@ -4,6 +4,15 @@ public static class Kata
 {
   public static bool XO (string input)
   {
-    return //Code it!
+    int xCounter = 0;
+    int oCounter = 0;
+
+    foreach (char c in input ) {
+        if(c.ToString().ToLower() == "x") {
+
+        } else if(c.ToString().ToLower() == "o") {
+
+        }
+    }
   }
 }
