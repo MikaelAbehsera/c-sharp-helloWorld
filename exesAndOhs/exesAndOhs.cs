@@ -9,10 +9,12 @@ public static class Kata
 
     foreach (char c in input ) {
         if(c.ToString().ToLower() == "x") {
-
+            xCounter++;
         } else if(c.ToString().ToLower() == "o") {
-
+            oCounter++;
         }
     }
+
+    return xCounter == oCounter;
   }
 }
