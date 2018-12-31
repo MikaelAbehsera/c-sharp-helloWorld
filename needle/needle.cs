@@ -1,10 +1,19 @@
 using System;
 public class Kata
 {
-  public static string FindNeedle(object[] haystack)
-  {
-      for ( int i = 0; i < haystack.Length; i++) {
-          if( haystack[i] == "needle" )  return "found the needle at position " + (i);
-      }
-  }
+    public static string FindNeedle(object[] haystack)
+    {
+        int i = -1;
+        
+        foreach (var n in haystack)
+        {
+            i++;
+            if (n.ToString() == "needle")
+            {
+                return "found the needle at position " + (i);
+            }
+        }
+
+        return "N/A";
+    }
 }
