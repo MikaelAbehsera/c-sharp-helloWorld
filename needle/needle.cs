@@ -8,7 +8,7 @@ public class Kata
         foreach (var n in haystack)
         {
             i++;
-            if (n.ToString() == "needle")
+            if (n == "needle")
             {
                 return "found the needle at position " + (i);
             }
