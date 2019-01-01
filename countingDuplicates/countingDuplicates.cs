@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+
 
 public class Kata
 {
@@ -9,12 +11,12 @@ public class Kata
         Dictionary<string, int> book = new Dictionary<string, int>();
 
         // split str into a list
-        string[] all = Regex.Split(str, string.Empty);
+        char[] all = str.ToCharArray();
 
         // loop over all and store results in the dictionary 
         for (int i = 0; i < all.Length; i++)
         {
-            string current = all[i].ToLower();
+            char current = Char.ToLower(all[i]);
 
             Console.WriteLine(current);
             Console.WriteLine("< ==");
