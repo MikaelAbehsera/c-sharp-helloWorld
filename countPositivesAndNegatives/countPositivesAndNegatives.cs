@@ -6,33 +6,20 @@ public class Kata
 {
     public static int[] CountPositivesSumNegatives(int[] input)
     {
-        int negative = 0;
-        int positive = 0;
-
-        for ( int i = 0; i < input.Length; i++)
+        int[] results = new int[0];
+        int pos = 0;
+        int neg = 0;
+        if (input != null && input.Length > 0)
         {
-            if( input[i] < 0 )
+            results = new int[2];
+            foreach (var i in input)
             {
-                // negative number 
-                negative -= input[i];
-            } else
-            {
-                // positive number
-                positive += input[i];
+                if (i > 0) { pos++; }
+                else { neg += i; }
             }
+            results[0] = pos;
+            results[1] = neg;
         }
-
-        if(input.Length > 0)
-        {
-            Console.WriteLine("im maybe here");
-            var arr = Array.Empty<int>();
-
-            Console.WriteLine(arr);
-            return arr;
-        }
-
-        Console.WriteLine("im here");
-        int[] list = new int[2] { positive, negative };
-        return list;
+        return results; //return an array with count of positives and sum of negatives
     }
 }
