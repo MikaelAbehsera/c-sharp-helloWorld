@@ -1,12 +1,4 @@
 using System;
-
-public class Kata
-{
-    public static int DuplicateCount(string str)
-    {
-        return -1;
-    }
-}using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Linq;
