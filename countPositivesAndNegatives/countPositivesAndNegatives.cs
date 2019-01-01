@@ -14,7 +14,7 @@ public class Kata
             if( input[i] < 0 )
             {
                 // negative number 
-                negative += input[i];
+                negative -= input[i];
             } else
             {
                 // positive number
@@ -22,12 +22,17 @@ public class Kata
             }
         }
 
-        if(positive > 0 && negative < 0)
+        if(input.Length > 0)
         {
-            int[] list = new int[2] { positive, negative };
-            return list;
+            Console.WriteLine("im maybe here");
+            var arr = Array.Empty<int>();
+
+            Console.WriteLine(arr);
+            return arr;
         }
 
-        return new int[0];
+        Console.WriteLine("im here");
+        int[] list = new int[2] { positive, negative };
+        return list;
     }
 }
