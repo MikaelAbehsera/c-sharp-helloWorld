@@ -21,6 +21,12 @@ public class Kata
                 positive += input[i];
             }
         }
-        return [positive, negative];
+
+        if(positive > 0 && negative < 0)
+        {
+            return new List<int>[positive, negative];
+        }
+
+        return new List<int>[];
     }
 }
