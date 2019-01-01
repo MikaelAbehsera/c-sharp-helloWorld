@@ -24,7 +24,8 @@ public class Kata
 
         if(positive > 0 && negative < 0)
         {
-            return new List<int>[positive, negative];
+            int[] list = new int[2] { positive, negative };
+            return list;
         }
 
         return new int[0];
