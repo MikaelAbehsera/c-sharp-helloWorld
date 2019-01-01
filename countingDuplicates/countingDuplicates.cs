@@ -16,7 +16,7 @@ public class Kata
         // loop over all and store results in the dictionary 
         for (int i = 0; i < all.Length; i++)
         {
-            char current = Char.ToLower(all[i]);
+            string current = Char.ToLower(all[i]).ToString();
 
             Console.WriteLine(current);
             Console.WriteLine("< ==");
