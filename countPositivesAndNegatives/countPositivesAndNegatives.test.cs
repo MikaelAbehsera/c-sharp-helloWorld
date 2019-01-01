@@ -1,11 +1,22 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
+using NUnit.Framework;
 
-public class Kata
+[TestFixture]
+public class SumTests
 {
-    public static int[] CountPositivesSumNegatives(int[] input)
+    [Test]
+    public void CountPositivesSumNegatives_BasicTest()
     {
-        return null; //return an array with count of positives and sum of negatives
+        int[] expectedResult = new int[] { 10, -65 };
+
+        Assert.AreEqual(expectedResult, Kata.CountPositivesSumNegatives(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15 }));
+    }
+
+    [Test]
+    public void CountPositivesSumNegatives_InputWithZeroes()
+    {
+        int[] expectedResult = new int[] { 8, -50 };
+
+        Assert.AreEqual(expectedResult, Kata.CountPositivesSumNegatives(new[] { 0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14 }));
     }
 }
