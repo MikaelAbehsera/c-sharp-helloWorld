@@ -25,6 +25,18 @@ public class Kata
             }
         }
 
-      
+        // set a count for how many dup logs we have
+        int count = 0;
+        // if there are 2 logs of a letter add it to the count
+        foreach (var log in book)
+        {
+            // if there are more then 1 log of that letter, count it
+            if (log.Value > 1)
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
