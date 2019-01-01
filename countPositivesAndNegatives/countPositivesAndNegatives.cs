@@ -18,9 +18,9 @@ public class Kata
             } else
             {
                 // positive number
-
+                positive += input[i];
             }
         }
-        return null; //return an array with count of positives and sum of negatives
+        return [positive, negative];
     }
 }
