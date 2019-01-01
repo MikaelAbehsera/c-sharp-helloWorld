@@ -9,12 +9,16 @@ public class Kata
         Dictionary<string, int> book = new Dictionary<string, int>();
 
         // split str into a list
-        string[] all = str.Split("");
+        string[] all = Regex.Split(str, string.Empty);
 
         // loop over all and store results in the dictionary 
         for (int i = 0; i < all.Length; i++)
         {
             string current = all[i].ToLower();
+
+            Console.WriteLine(current);
+            Console.WriteLine("< ==");
+
 
             // check if we have a log of this letter
             if (book.ContainsKey(current))
