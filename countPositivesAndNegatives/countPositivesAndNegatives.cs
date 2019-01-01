@@ -27,6 +27,6 @@ public class Kata
             return new List<int>[positive, negative];
         }
 
-        return new List<int>[];
+        return new int[0];
     }
 }
