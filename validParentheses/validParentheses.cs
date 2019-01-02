@@ -8,11 +8,11 @@ public class Parentheses
         // loop on all chars, selecting relevant ones
         foreach (char c in input)
         {
-            if( c == "(" )
+            if( c.ToString() == "(" )
             {
                 balance++;
             }
-            else if ( c == ")" )
+            else if ( c.ToString() == ")" )
             {
                 balance--;
             }
