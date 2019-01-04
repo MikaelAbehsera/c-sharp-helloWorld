@@ -14,16 +14,19 @@ public class Kata
 
             if (counter % 2 == 0)
             {
-               char letter = Char.ToUpper(c);
-                str.Add(letter.ToString());
+                string letter = Char.ToUpper(c).ToString();
+                str.Add(letter);
+                Console.WriteLine(letter);
             } else
             {
-                str.Add(c.ToString());
+                string letter = Char.ToLower(c).ToString();
+                str.Add(letter);
+                Console.WriteLine(letter);
             }
 
             counter++;
         }
 
-        return s;
+        return str;
     }
 }
