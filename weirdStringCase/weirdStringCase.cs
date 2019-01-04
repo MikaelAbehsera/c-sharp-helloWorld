@@ -14,10 +14,10 @@ public class Kata
             if (counter % 2 == 0)
             {
                char letter = Char.ToUpper(c);
-                str.add(letter);
+                str.add(letter.ToString());
             } else
             {
-                str.add(letter);
+                str.add(letter.ToString());
             }
 
             counter++;
