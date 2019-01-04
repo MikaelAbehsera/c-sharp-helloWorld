@@ -4,6 +4,19 @@ public class Kata
 {
     public static string ToWeirdCase(string s)
     {
-        //Your code goes here!
+        int counter = 0; 
+
+        foreach ( char c in s )
+        {
+
+            if (counter % 2 == 0)
+            {
+                c = c.ToUpper();
+            }
+
+            counter++;
+        }
+
+        return s;
     }
 }
