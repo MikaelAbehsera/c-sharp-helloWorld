@@ -16,16 +16,28 @@ public class Kata
                 string letter = (Char.ToUpper(c)).ToString();
                 str.Add(letter);
                 Console.WriteLine(letter);
-            } else
+            }
+            else if (counter == 0)
+            {
+                string letter = (Char.ToUpper(c)).ToString();
+                str.Add(letter);
+                Console.WriteLine(letter);
+            }
+            else
             {
                 string letter = (Char.ToLower(c)).ToString();
                 str.Add(letter);
                 Console.WriteLine(letter);
             }
 
-            counter++;
+            string empty = c.ToString();
+
+            if (empty != " ")
+            {
+                counter++;
+            }
         }
 
-        return str;
+        return string.Join("", str.ToArray());
     }
 }
