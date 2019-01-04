@@ -18,7 +18,7 @@ public class Kata
                 str.Add(letter.ToString());
             } else
             {
-                str.Add(letter.ToString());
+                str.Add(c.ToString());
             }
 
             counter++;
