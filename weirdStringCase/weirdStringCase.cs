@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 public class Kata
 {
@@ -14,10 +15,10 @@ public class Kata
             if (counter % 2 == 0)
             {
                char letter = Char.ToUpper(c);
-                str.add(letter.ToString());
+                str.Add(letter.ToString());
             } else
             {
-                str.add(letter.ToString());
+                str.Add(letter.ToString());
             }
 
             counter++;
