@@ -5,9 +5,11 @@ public static class Kata
 	public static string HighAndLow(string numbers)
 	{
 		// split string, store all high and low numbers, return as string
-		int high = 0;
-		int low = 0;
 		string[] list = numbers.Split(" ");
+		int high;
+		int low;
+		Int32.TryParse(list[0], out high);
+		Int32.TryParse(list[0], out low);
 
 		foreach (string l in list) {
 			int n;
